@@ -20,7 +20,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'nokogiri', '~> 1.6', '>= 1.6.8'
 gem 'bootstrap-sass', '~> 3.4.1'
 gem 'sassc-rails', '>= 2.1.0'
-gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.18'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
@@ -50,6 +50,7 @@ end
 
 group :development, :production do
   gem 'pg', '~> 1.1'
+  gem 'sqlite3', '~> 1.4'
 end
 group :test do
   gem 'sqlite3', '~> 1.4'
@@ -63,7 +64,7 @@ group :test do
   gem 'faker',                        '~> 1.8', '>= 1.8.7'
   gem 'factory_bot_rails',            '~> 4.8', '>= 4.8.2'
   gem 'rails-controller-testing',     '~> 1.0.2'
-  gem 'rspec-rails',                  '~> 3.7'
+  gem 'rspec-rails',                  '~> 4.1.0'
   gem 'shoulda',                      '~> 3.5'
   gem 'shoulda-callback-matchers',    '~> 1.1', '>= 1.1.3'
   gem 'simplecov',                    '~> 0.15.1',              require: false
